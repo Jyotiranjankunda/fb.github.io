@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;;
+    position: relative;
+}
+
+.container{
+    width: 80%;
+    height: 670px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.facebook{
+    width: 24%;
+    max-height: 10rem;
+    position: absolute;
+    left: 20rem;
+    top: 37%;
+}
+
+.icon p{
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #0921fa;
+    letter-spacing: -1.5px;
+    margin-bottom: 2%;
+}
+
+.intro p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.login-form{
+    width: 50%;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 4rem;
+}
+
+.form{
+    width: 21em;
+    height: 24em;
+    box-shadow: 1px 1px 1px #838282, 1px 1px 3px #979696, 1px 1px 6px #9b9999;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.details{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.details form input{
+    display: block;
+    width: 23em;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #838282;
+}
+
+.details form input:nth-child(1){
+    margin-top: 10%;
+}
+
+.log-in{
+    background: #0921fa;
+    border: 1px solid #0921fa;
+    margin: 1rem 0;
+    padding: 0 8.1rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-top: 5%;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.log-in:hover{
+    background: #2c3dd3;;
+}
+
+a{
+    text-decoration: none;
+    color: #0921fa;
+    font-size: 0.9rem;
+    margin: 0 auto 3rem;
+    position: relative;
+}
+
+a::after{
+    content: "";
+    background: #838282;
+    width: 22em;
+    height: 2px;
+    position: absolute;
+    bottom: -226%;
+    left: -93%;
+}
+
+.create{
+    font-size: 1rem;
+    width: 50%;
+    padding: 2% 2px;
+    background: #42b72a;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #42b72a;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 8%;
+}
+
+.create:hover{
+    background: #35c717;
+}
+
+.text{
+    margin-top: 10px;
+    font-size: small;
+}
+
+.text span{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    .facebook{
+        left: 5rem;
+    }
+    .intro p{
+        width: 23rem;   
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+    .facebook{
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        top: 3%;
+        text-align: center;
+    }
+    .intro p{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center; 
+    }
+    .login-form{
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .intro{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .form{
+        width: 80%;
+    }
+    .details form input{
+        width: 17em;
+    }
+    .log-in{
+        padding: 0px 5.6rem;
+    }
+    a::after{
+        width: 197%;
+        left: -50%;
+    }
+    .create{
+        width: 72%;
+        height: 2.5rem;
+    }
+    .text p{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+}
