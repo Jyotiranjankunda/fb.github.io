@@ -164,7 +164,7 @@ a::after{
 @media screen and (max-width: 768px) {
     .container{
         flex-direction: column;
-        justify-content: center;
+        /*justify-content: center;*/
     }
     .facebook{
         width: 100%;
